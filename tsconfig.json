@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "target": "es6",
+    "module": "esnext",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "noEmitHelpers": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "jsxFactory": "preact.h",
+    "baseUrl": "./src",
+    "paths": {
+      "ui/*": ["ui/*"],
+      "lib/*": ["lib/*"]
+    }
+  },
+  "suppressImplicitAnyIndexErrors": true,
+  "lib": ["dom", "es2019"],
+  "paths": {
+    "*": ["typings/*"],
+    "react": ["node_modules/preact/compat"],
+    "react-dom": ["node_modules/preact/compat"]
+  },
+  "exclude": ["dist", "./node_modules/**/*"]
+}
